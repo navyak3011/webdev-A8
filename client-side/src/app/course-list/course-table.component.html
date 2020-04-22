@@ -1,0 +1,33 @@
+<!--&nbsp;
+<div>
+  <div>
+    <h2>Courses</h2>
+  </div>
+  <ul class="list-group">
+    <li class="list-group-item"
+        *ngFor="let course of courses">
+      <a routerLink="/layout/courses/{{course._id}}/modules"
+         class="text-dark">
+        {{course.title}}
+      </a>
+      <a class="float-right" routerLink="/courses/{{course._id}}/quizzes">
+        Quizzes
+      </a>
+    </li>
+  </ul>
+</div>-->
+<div class="container-fluid">
+  <mat-card>
+    <mat-card-header><h2>Courses</h2></mat-card-header>
+    <mat-list *ngFor="let course of courses">
+      <mat-list-item routerLink="/layout/courses/{{course._id}}/modules"
+                     [routerLinkActive]="['is-active']">
+        {{course.title}} &nbsp;
+        <span>         </span>
+        <a class="float-right" routerLink="/courses/{{course._id}}/quizzes">
+          Quizzes
+        </a>
+      </mat-list-item>
+    </mat-list>
+  </mat-card>
+</div>

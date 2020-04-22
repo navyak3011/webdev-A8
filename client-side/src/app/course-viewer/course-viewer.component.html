@@ -1,0 +1,27 @@
+<mat-card fxFlex="100%">
+  <div fxLayout="row" class="container"
+       fxLayout.xs="column"
+       fxLayoutAlign="center"
+       fxLayoutGap="15px"
+       fxLayoutGap.xs="0">
+    <mat-card fxFlex="30%">
+      <mat-card-content>
+        <app-course-list></app-course-list>
+      </mat-card-content>
+    </mat-card>
+    <mat-card fxFlex="70%">
+      <mat-card fxLayout="row">
+        <mat-card fxLayout="column" fxFlex="22%">
+          <mat-card-content>
+            <app-module-list></app-module-list>
+          </mat-card-content>
+        </mat-card>
+        <mat-card fxLayout="column" fxFlex="78%" fxLayoutGap="15px">
+          <mat-card-content>
+            <app-lesson-tabs></app-lesson-tabs>
+          </mat-card-content>
+        </mat-card>
+      </mat-card>
+    </mat-card>
+  </div>
+</mat-card>

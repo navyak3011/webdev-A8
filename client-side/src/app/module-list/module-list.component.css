@@ -1,0 +1,9 @@
+.is-active {
+  background-color: #673ab7;
+  color: white;
+}
+
+mat-card {
+  max-width: 450px;
+  margin: 2em auto;
+}

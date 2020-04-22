@@ -1,0 +1,24 @@
+<h2 mat-subheader>
+  {{moduleTitle}} Lessons
+</h2>
+<mat-tab-group>
+  <mat-tab *ngFor="let lesson of lessons"
+           label={{lesson.title}}
+           routerLink="/details/{{courseId}}/modules/{{moduleId}}/lessons/{{lesson._id}}">
+    <br/>
+    <mat-chip-list>
+      <mat-chip>Topic 1 for {{lesson.title}}</mat-chip>
+      <mat-chip>Topic 2 for {{lesson.title}}</mat-chip>
+    </mat-chip-list>
+    <br/>
+  </mat-tab>
+</mat-tab-group>
+<!--<mat-tab-group>
+  <mat-tab *ngFor="let lesson of lessons" label={{lesson.title}}
+           routerLink=/details/{{courseId}}/modules/{{moduleId}}/lessons/{{lesson._id}}">
+    <mat-chip-list>
+      <mat-chip>Topic 1 for {{lesson.title}}</mat-chip>
+      <mat-chip>Topic 2 for {{lesson.title}}</mat-chip>
+    </mat-chip-list>
+  </mat-tab>
+</mat-tab-group>-->
